@@ -1,0 +1,28 @@
+<!--pages/yangzhao/yangzhao.wxml-->
+<text>pages/yangzhao/yangzhao.wxml</text>
+<view>
+  <view>
+    <image src='http://127.0.0.1:3000/kezhao/1.png'></image>
+  </view>
+  <view class='dao'>
+    <view bindtap='quan' data-id='1'>
+      <text>全部</text>
+    </view>
+    <view bindtap='quan' data-id='2'>
+      <text>香格里拉站</text>
+    </view>
+    <view bindtap='quan' data-id='3'>
+      <text>稻城站</text>
+    </view>
+    <view bindtap='quan' data-id='4'>
+      <text>丽江战</text>
+    </view>
+  </view>
+  <view wx:for="{{list}}" wx:key="id">
+    <image src='{{item.img_url}}'></image>
+    <text>{{item.title}}</text>
+  </view>
+  <import src="../post/item_template"/>
+  <template is="item_name2"></template>
+  <template is="item_name1"></template>
+</view>

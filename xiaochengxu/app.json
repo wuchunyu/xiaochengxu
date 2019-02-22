@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/huodong/huodong",
+    "pages/yangzhao/yangzhao",
+    "pages/zaixian/zaixian",
+    "pages/zaixian0/zaixian0",
+    "pages/kezhao/kezhao",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f60",
+    "navigationBarTitleText": "提拉米苏环球旅拍",
+    "navigationBarTextStyle": "white"
+  }
+}

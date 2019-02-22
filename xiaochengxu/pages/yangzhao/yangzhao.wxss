@@ -1,0 +1,13 @@
+/* pages/yangzhao/yangzhao.wxss */
+.dao{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+  /* justify-content: center; */
+}
+.dao view{
+  margin: 30rpx 22rpx;
+}
+
+@import "../post/item_template.wxss";

@@ -1,0 +1,27 @@
+/* pages/kezhao/kezhao.wxss */
+.kezhao{
+  position: relative;
+  
+}
+.kezhao image{
+  scale: 1.5;
+}
+.kezhao text{
+  position: absolute;
+  left: 300rpx;
+  top: 200rpx;
+  color: white;
+}
+
+.list{
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+.list image{
+  margin: 50rpx;
+  width: 280rpx;
+  height: 260rpx;
+}
+
+@import "../post/item_template.wxss";

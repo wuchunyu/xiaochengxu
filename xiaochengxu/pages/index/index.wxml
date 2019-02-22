@@ -1,0 +1,128 @@
+<!--index.wxml-->
+<view class="index-container">
+  <import src="../post/item_template"/>
+  <template is="item_name3"></template>
+  <view  class="a {{open ? ['c-state','cover'] : ''}} " bindtap='fan'>
+    <!-- 导航栏 -->
+    <view class='login'>
+      <image src='http://127.0.0.1:3000/img/4.png' id='a'></image>
+      <image src='http://127.0.0.1:3000/img/4.png'></image>
+    </view>
+    <!-- 轮播图 -->
+    <view class='slider'>
+      <swiper autoplay='true' indicator-dots='true'>
+        <swiper-item wx:for="{{list}}" wx:key="id">
+          <image src="{{item.img_url}}" lazy-load='true' mode='aspectFill'></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 导航栏 -->
+    <view class='dao'>
+      <navigator url='/pages/index/index'>
+        <image src='http://127.0.0.1:3000/kezhao/1.png' lazy-load='true' mode='aspectFill'></image>
+        <text>首页</text>
+      </navigator>
+      <navigator url='/pages/kezhao/kezhao'>
+        <image src='http://127.0.0.1:3000/kezhao/1.png' lazy-load='true' mode='aspectFill'></image>
+        <text>客照</text>
+      </navigator>
+      <navigator url='/pages/yangzhao/yangzhao'>
+        <image src='http://127.0.0.1:3000/kezhao/1.png' lazy-load='true' mode='aspectFill'></image>
+        <text>样照</text>
+      </navigator>
+      <navigator>
+        <image src='http://127.0.0.1:3000/kezhao/1.png' lazy-load='true' mode='aspectFill'></image>
+        <text>活动</text>
+      </navigator>
+      <navigator>
+        <image src='http://127.0.0.1:3000/kezhao/1.png' lazy-load='true' mode='aspectFill'></image>
+        <text>套系</text>
+      </navigator>
+      <navigator>
+        <image src='http://127.0.0.1:3000/kezhao/1.png' lazy-load='true' mode='aspectFill'></image>
+        <text>微电影</text>
+      </navigator>
+    </view>
+    <!--  -->
+    <view class='tuijian'>
+      <text>推荐套系</text>
+    </view>
+    <view class='yang'>
+      <view class='yang0'>
+        <text class='yang1'>热门样片</text>
+      </view>
+      <view wx:for="{{yang}}" wx:key="id" class='yang2'>
+        <navigator>
+          <view>
+            <image src='{{item.img_url}}'></image>
+          </view>
+          <text>{{item.title}}</text>
+        </navigator>
+      </view>
+    </view>
+    <view class='cha0'>
+      <view class='cha'>查看所有样片</view>
+    </view>
+    <!--  -->
+    <view class='meiri'>
+      <view class='meiri1'>
+        每日客照
+      </view>
+      <view wx:for="{{kezhao}}" wx:key="id" class='meiri0'>
+        <image src='{{item.img_url}}' lazy-load='true' mode='aspectFill'></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+    <view class='kezhao11'>
+      <view class='kezhao22'>查看所有客照</view>
+    </view>
+    <view class='baojia'>快速报价</view>
+    <form bindsubmit="checkForm">
+      <view class='lifu1'>
+        <view class='lifu'>礼服</view>
+        <view class='lifu0'>
+          <button class='lifu03'>男女各三套</button>
+          <button class='lifu03'>男女各四套</button>
+          <button class='lifu03'>男女各五套</button>
+          <button class='lifu03'>男女各六套</button>
+        </view>
+      </view>
+      <view class='lifu1'>
+        <view class='lifu'>礼服</view>
+        <view class='lifu0'>
+          <button class='lifu03'>男女各三套</button>
+          <button class='lifu03'>男女各四套</button>
+          <button class='lifu03'>男女各五套</button>
+          <button class='lifu03'>男女各六套</button>
+        </view>
+      </view>
+      <view class='lifu1'>
+        <view class='lifu'>礼服</view>
+        <view class='lifu0'>
+          <input type='button' class="{{3 == current_tag?'lifu04':'lifu03'}}" name="san" value="男女各三套" bindtap='clickedAction' data-id="3" disabled='disabled'></input>
+          <input type='button' class="{{4 == current_tag?'lifu04':'lifu03'}}" name="san" value="男女各四套" bindtap='clickedAction' data-id="4" disabled='disabled'></input>
+          <input type='button' class="{{5 == current_tag?'lifu04':'lifu03'}}" name="san" value="男女各五套" bindtap='clickedAction' data-id="5" disabled='disabled'></input>
+          <input type='button' class="{{6 == current_tag?'lifu04':'lifu03'}}" name="san" value="男女各六套" bindtap='clickedAction' data-id="6" disabled='disabled'></input>
+        </view>
+      </view>
+      <view class='ming'>
+        <view class='ming0'>姓名*</view>
+        <view class='ming1'>
+          <input type="text" name="pname" placeholder="请填写" value='{{pn}}'/>
+        </view>
+      </view>
+      <view class='ming'>
+        <view class='ming0'>手机*</view>
+        <view class='ming1'>
+          <input type="text" name="phone" placeholder="请填写" value='{{ph}}'/>
+        </view>
+      </view>
+        <view  class="cell-item">
+          <button formType="submit"><text>+获取报价</text></button>
+        </view>
+    </form>
+  </view>
+  <import src="../post/item_template"/>
+  <template is="item_name2"></template>
+  <template is="item_name1"></template>
+</view>

@@ -1,0 +1,249 @@
+/**index.wxss**/
+
+/*login*/
+.login{
+  display: flex;
+  justify-content: space-around;
+}
+#a{
+  margin-left: 0rpx;
+  margin-right: 300rpx;
+}
+.login{
+  height: 100rpx;
+  width: 100%;
+}
+.login image{
+  height: 100rpx;
+  width:100rpx;
+}
+/*轮播图*/
+.slider,.slider swiper,.slider image{
+  height:590rpx;
+  width:100%;
+}
+
+/**/
+.tuijian{
+  font: 14px;
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+  height: 100rpx;
+}
+.tuijian text{
+  line-height: 100rpx;
+}
+
+.yang{
+  text-align: center;
+}
+.yang .yang0{
+  height: 100rpx;
+}
+.yang .yang1{
+  font: 14px;
+  line-height: 100rpx;
+}
+.yang .yang2{
+  width: 49%;
+  display: inline-block;
+}
+.yang .yang2 image{
+  width: 280rpx;
+  height: 260rpx;
+}
+.cha0{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+.cha{
+  font-size: 10px;
+  color: green;
+  border: 1px solid green;
+  border-radius: 11px;
+  width: 280rpx;
+  text-align: center;
+  margin:0 auto;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+/*每日客照*/
+.meiri{
+  /* text-align: center; */
+  background-color: #ccc;
+}
+.meiri0{
+  padding: 20rpx;
+}
+.meiri .meiri0 text{
+  /* display: block; */
+  /* height: 50rpx;
+  font-size: 10px;
+  overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;  */
+font-size:10px;
+height:30rpx;
+width: 250rpx;
+display: block;
+overflow: hidden;
+white-space: nowrap;
+text-overflow:ellipsis;
+}
+.meiri .meiri0 image{
+  width: 100%;
+  height: 300rpx;
+}
+.meiri .meiri1{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.kezhao11{
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+.kezhao22{
+  font-size: 10px;
+  color: green;
+  border: 1px solid green;
+  border-radius: 11px;
+  width: 280rpx;
+  text-align: center;
+  margin:0 auto;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.baojia{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #ccc;
+  color: green;
+  font-size: 25px;
+}
+
+/*礼服*/
+.lifu1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+}
+.lifu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100rpx;
+  line-height: 200rpx;
+  border-right: 1px solid #ccc;
+}
+.lifu .lifu0{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
+}
+.lifu03{
+  border: 1px solid #ccc;
+  font-size: 9px;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  display: inline-block;
+  margin: 20rpx 18rpx;
+  border-radius: 11px;
+  color: #000;
+  background-color: white;
+}
+.lifu04{
+  border: 1px solid #0f6;
+  font-size: 9px;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  display: inline-block;
+  margin: 20rpx 18rpx;
+  border-radius: 11px;
+  color: #000;
+  background-color: white;
+}
+
+.ming{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.ming .ming0{
+  display:flex;
+align-items:center;
+justify-content:center;
+width:25%;
+height:100rpx;
+line-height:200rpx;
+/* border-right:1px solid #ccc; */
+}
+.ming .ming1{
+  width: 75%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 1px solid #ccc; */
+}
+.ming .ming1 input{
+  border: 1px solid #ccc;
+  width: 90%;
+}
+
+.cell-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+}
+.cell-item button{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* text-align: center; */
+  background-color: green;
+  width: 90%;
+  height: 80%;
+  color: white;
+}
+
+@import "../post/item_template.wxss";
+
+.a{
+  /* position: relative;
+  z-index: -1; */
+  position: relative;
+  background-color: white;
+}
+/* 导航栏 */
+.dao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dao navigator{
+  width: 16.66%;
+}
+.dao image{
+  height: 50px;    
+  width: 50px;    
+  border-radius: 50%;
+}
+
+

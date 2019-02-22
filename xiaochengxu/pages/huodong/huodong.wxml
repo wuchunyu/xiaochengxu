@@ -1,0 +1,10 @@
+<!--pages/huodong/huodong.wxml-->
+<text>pages/huodong/huodong.wxml</text>
+<view wx:for="{{yang}}" wx:key="id" class='yang2'>
+  <navigator>
+    <view>
+      <image src='{{item.img_url}}'></image>
+    </view>
+    <text>{{item.title}}</text>
+  </navigator>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/zaixian0/zaixian0.wxml-->
+<text>pages/zaixian0/zaixian0.wxml</text>
+<import src="../post/item_template"/>
+  <template is="item_name2"></template>
+  <template is="item_name1"></template>

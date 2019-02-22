@@ -1,0 +1,98 @@
+.zhichi{
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rpx;
+  height: 200rpx;
+}
+.haha{
+   display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 150rpx;
+  overflow:hidden;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: white;
+  /* height: 56rpx; */
+}
+.haha0{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0rpx;
+  font-size: 10px;
+  align-items: center;
+}
+.haha0 text{
+  display: block;
+  margin: 10rpx;
+}
+.haha1{
+  display: flex;
+  background-color: green;
+  font-size: 10px;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  /* height: 56rpx;  */
+}
+.haha2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.haha0,.haha1,.haha2{
+   width: 33%; 
+   height:100%;
+}
+.haha image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.wc{
+  color:black;
+  padding: 30rpx 0 30rpx 150rpx;
+  border-bottom: 1px solid #eee; 
+}
+.page-top{
+  padding-top: 125rpx;
+  height: 100%;
+  width: 60%;
+  position: fixed; 
+  background-color:white;
+  /* z-index: -1; */
+}
+e{
+  z-index: -1;
+}
+f{
+  z-index: 9;
+}
+.c-state{
+  transform: rotate(0deg) scale(1) translate(60%, 0%);
+  -webkit-transform: rotate(0deg) scale(1) translate(60%, 0%);
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  background-color:gray;
+  opacity: 0.5;
+  z-index: 9000;
+}
+.image image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.image{
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 10;
+}

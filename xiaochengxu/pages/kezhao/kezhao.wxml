@@ -1,0 +1,19 @@
+<!--pages/kezhao/kezhao.wxml-->
+<text>pages/kezhao/kezhao.wxml</text>
+<view>
+  <view class='kezhao'>
+    <image src='http://127.0.0.1:3000/kezhao/1.png' mode='aspectFill' lazy-load='true'></image>
+    <text>客照</text>
+  </view>
+  <view wx:for="{{kezhao}}" wx:key="id" class='list'>
+      <navigator>
+        <view>
+          <image src='{{item.img_url}}' mode='aspectFill'></image>
+        </view>
+        <text>{{item.title}}</text>
+      </navigator>
+  </view>
+  <import src="../post/item_template"/>
+  <template is="item_name2"></template>
+  <template is="item_name1"></template>
+</view>

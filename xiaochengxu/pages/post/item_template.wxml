@@ -1,0 +1,38 @@
+<template name="item_name2">
+  <view class='zhichi'>
+    <view>提拉米苏环球旅拍</view>
+    <view>技术支持，樱花互动</view>
+  </view>
+</template>
+<template name="item_name1">
+  <view class='haha'>
+    <view class='haha0'>
+      <image src='http://127.0.0.1:3000/images/dian.png' mode='aspectFill'></image>
+      <text>400-6603-520</text>
+    </view>
+    <navigator url='/pages/zaixian/zaixian' class='haha1'>
+        <image src='http://127.0.0.1:3000/images/dui.png' mode='aspectFill'></image>
+        <text>在线咨询</text>
+    </navigator>
+    <navigator url='/pages/zaixian0/zaixian0' class='haha2'>
+        <image src='http://127.0.0.1:3000/images/li.png' mode='aspectFill'></image>
+        <text>报价</text>
+    </navigator>
+  </view>
+</template>
+<template name="item_name3">
+  <view class='image' bindtap='dian'>
+    <image src='http://127.0.0.1:3000/kezhao/1.png'></image>
+  </view>
+  <view class="page-top {{open ? ['e'] : ['f']}}" >
+    <view class='wc' bindtap='tiao0' data-id='1'>
+      <text>首页</text>
+    </view>
+    <view class='wc' data-id='2' bindtap='tiao0'>
+      <text>客照</text>
+    </view>
+    <view class='wc' data-id='3' bindtap='tiao0'>
+      <text>样照</text>
+    </view>
+  </view>
+</template>
